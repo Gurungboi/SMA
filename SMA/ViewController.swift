@@ -39,42 +39,70 @@ class ViewController: UIViewController, CAPSPageMenuDelegate {
         // Example:
         
         var basicinfocontroller: UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "basicinfoview"))!
-        basicinfocontroller.title = "Basic Info"
+        basicinfocontroller.title = "BASIC INFO"
         controllerArray.append(basicinfocontroller)
         
         var gradecontroller: UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "gradeview"))!
-        gradecontroller.title = "Grade"
+        gradecontroller.title = "GRADE"
         controllerArray.append(gradecontroller)
         
         
         var testcontroller: UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "testview"))!
-        testcontroller.title = "Test"
+        testcontroller.title = "TEST"
         controllerArray.append(testcontroller)
         
         var teachernotecontroller: UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "teachernoteview"))!
-        teachernotecontroller.title = "Teacher Note"
+        teachernotecontroller.title = "TEACHER NOTE"
         controllerArray.append(teachernotecontroller)
         
         
         var feedetailcontroller: UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "feedetailview"))!
-        feedetailcontroller.title = "Fee Details"
+        feedetailcontroller.title = "FEE DETAILS"
         controllerArray.append(feedetailcontroller)
         
         var busfarecontroller: UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "busfareview"))!
-        feedetailcontroller.title = "Bus Fares"
+        busfarecontroller.title = "BUS FARES"
         controllerArray.append(busfarecontroller)
         
         // Customize page menu to your liking (optional) or use default settings by sending nil for 'options' in the init
         // Example:
         var parameters: [CAPSPageMenuOption] = [
-            .menuItemSeparatorWidth(4.3),
-            .useMenuLikeSegmentedControl(true),
-            .menuItemSeparatorPercentageHeight(0.1)
+//            .menuItemSeparatorWidth(4.3),
+//            .useMenuLikeSegmentedControl(true),
+//            .menuItemSeparatorPercentageHeight(0.1)
+                        .scrollMenuBackgroundColor(.white),
+                        .viewBackgroundColor(.white),
+                        .selectionIndicatorColor(.white),
+                        .bottomMenuHairlineColor(.white),
+                        .menuHeight(50.0),
+                        .menuItemWidth(self.view.frame.width/3),
+                        .centerMenuItems(true),
+                        .selectedMenuItemLabelColor(.red),
+                        .unselectedMenuItemLabelColor(.black),
+                        .menuMargin(0.0)
+                     
+            
         ]
+        
+        
+        
+//        let parameters: [CAPSPageMenuOption] = [
+//            .scrollMenuBackgroundColor(.blue),
+//            .viewBackgroundColor(.white),
+//            .selectionIndicatorColor(.white),
+//            .bottomMenuHairlineColor(.white),
+//            .menuHeight(40.0),
+//            .menuItemWidth(self.view.frame.width/3),
+//            .centerMenuItems(true),
+//            .selectedMenuItemLabelColor(.white),
+//            .unselectedMenuItemLabelColor(.white),
+//            .menuMargin(0.0)
+//        ]
+
         
         // Initialize page menu with controller array, frame, and optional parameters
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: self.view.frame, pageMenuOptions: parameters)
-        
+        //pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x:0,y:64,width:self.InformationView.frame.width ,height:self.InformationView.frame.height) , pageMenuOptions: parameters)
         
         // Lastly add page menu as subview of base view controller view
         // or use pageMenu controller in you view hierachy as desired

@@ -10,6 +10,8 @@ import UIKit
 
 class GradeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblsubjectname: UILabel!
+    @IBOutlet weak var lblgrades: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

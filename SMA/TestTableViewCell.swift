@@ -9,7 +9,14 @@
 import UIKit
 
 class TestTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var lblsubjectname: UILabel!
+    @IBOutlet weak var lblexamdate: UILabel!
+    @IBOutlet weak var lblterminal: UILabel!
+    @IBOutlet weak var lblpassmark: UILabel!
+    @IBOutlet weak var lblfullmark: UILabel!
+    @IBOutlet weak var lblobtainedmark: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

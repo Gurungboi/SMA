@@ -8,28 +8,36 @@
 
 import UIKit
 
-class BusFareViewController: UIViewController {
+class BusFareViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var busView: UITableView!
+    
+    var bus = ["Bus Route","Bus Time","Driver Name","Drive Number","Bus Number"]
+    var busdetails = ["C","9.30 am","John Doe","9840061291","2351"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return bus.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellBus = tableView.dequeueReusableCell(withIdentifier: "busCell", for: indexPath) as! BusFareTableViewCell
+        
+        
+        cellBus.lblbus.text = bus[indexPath.row]
+        cellBus.lblbusdetail.text = busdetails[indexPath.row]
+        
+        
+        return (cellBus)
+        
     }
-    */
 
 }

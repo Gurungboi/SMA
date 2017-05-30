@@ -8,28 +8,38 @@
 
 import UIKit
 
-class GradeViewController: UIViewController {
+class GradeViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var gradeView: UITableView!
+    
+    var subjectname = ["Maths","Science","English","Health","Science","English"]
+    var grades = ["A+","B","A+","C","B","A+"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return subjectname.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellGrade = tableView.dequeueReusableCell(withIdentifier: "gradeCell", for: indexPath) as! GradeTableViewCell
+        
+        
+        cellGrade.lblsubjectname.text = subjectname[indexPath.row]
+        cellGrade.lblgrades.text = grades[indexPath.row]
+        
+        
+        return (cellGrade)
+        
     }
-    */
 
-}
+
+  }

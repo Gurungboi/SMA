@@ -8,28 +8,43 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+class TestViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var testView: UITableView!
+    
+    var subjectname = ["Home Science","Home Science","Home Science","Home Science"]
+    var examdate = ["May 8, 2017","May 8, 2017","May 8, 2017","May 8, 2017"]
+    var terminal = ["First Terminal Examination","First Terminal Examination","First Terminal Examination","First Terminal Examination"]
+    var passmark = ["40","40","40","40"]
+    var fullmark = ["100","100","100","100"]
+    var obtainedmark = ["40","40","40","40"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return subjectname.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellTest = tableView.dequeueReusableCell(withIdentifier: "testCell", for: indexPath) as! TestTableViewCell
+        
+        
+        cellTest.lblsubjectname.text = subjectname[indexPath.row]
+        cellTest.lblexamdate.text = examdate[indexPath.row]
+         cellTest.lblterminal.text = terminal[indexPath.row]
+         cellTest.lblpassmark.text = passmark[indexPath.row]
+         cellTest.lblfullmark.text = fullmark[indexPath.row]
+         cellTest.lblobtainedmark.text = obtainedmark[indexPath.row]
+        
+        return (cellTest)
+        
     }
-    */
 
+    
 }

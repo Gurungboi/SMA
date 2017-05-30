@@ -10,6 +10,8 @@ import UIKit
 
 class BusFareTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblbus: UILabel!
+    @IBOutlet weak var lblbusdetail: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -38,6 +38,8 @@
 		2E3D3E2B1EC1D18000F0EFA0 /* TeacherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D3E2A1EC1D18000F0EFA0 /* TeacherCollectionViewCell.swift */; };
 		2E4DCD911EC99F86003D2B28 /* StudentAttendantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DCD901EC99F86003D2B28 /* StudentAttendantTableViewCell.swift */; };
 		2EB21D1A1EC314CC006717DA /* TeacherDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB21D191EC314CC006717DA /* TeacherDashViewController.swift */; };
+		2EC173361EDD65380009A090 /* notice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EC173351EDD65370009A090 /* notice.json */; };
+		2EF21EED1ED99731004D5F35 /* student.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EF21EEC1ED99731004D5F35 /* student.json */; };
 		B3C71F799BAAC1066B5EBEC2 /* Pods_SMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C638B7FF7199EB8FACA62C /* Pods_SMA.framework */; };
 		DDDBA4C39A08453DDA1DBCDB /* Pods_SMATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 099BDBCF6323079C355D140D /* Pods_SMATests.framework */; };
 /* End PBXBuildFile section */
@@ -100,6 +102,8 @@
 		2E3D3E2A1EC1D18000F0EFA0 /* TeacherCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E4DCD901EC99F86003D2B28 /* StudentAttendantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentAttendantTableViewCell.swift; sourceTree = "<group>"; };
 		2EB21D191EC314CC006717DA /* TeacherDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDashViewController.swift; sourceTree = "<group>"; };
+		2EC173351EDD65370009A090 /* notice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notice.json; sourceTree = "<group>"; };
+		2EF21EEC1ED99731004D5F35 /* student.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = student.json; path = SMA/student.json; sourceTree = "<group>"; };
 		45C638B7FF7199EB8FACA62C /* Pods_SMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		944627CF656CF3C1A62BEBDB /* Pods_SMAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE1FA266B0EA1EF0A22246F /* Pods-SMATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMATests/Pods-SMATests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				2E3D3D9D1EC180E700F0EFA0 /* SMA */,
+				2EF21EEC1ED99731004D5F35 /* student.json */,
+				2EC173351EDD65370009A090 /* notice.json */,
 				2E3D3DB21EC180E800F0EFA0 /* SMATests */,
 				2E3D3DBD1EC180E800F0EFA0 /* SMAUITests */,
 				2E3D3D9C1EC180E700F0EFA0 /* Products */,
@@ -363,6 +369,7 @@
 				TargetAttributes = {
 					2E3D3D9A1EC180E700F0EFA0 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 63UXYZ8XVE;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -404,7 +411,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E3D3DA91EC180E700F0EFA0 /* LaunchScreen.storyboard in Resources */,
+				2EC173361EDD65380009A090 /* notice.json in Resources */,
 				2E3D3DA61EC180E700F0EFA0 /* Assets.xcassets in Resources */,
+				2EF21EED1ED99731004D5F35 /* student.json in Resources */,
 				2E3D3DA41EC180E700F0EFA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -748,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 63UXYZ8XVE;
 				INFOPLIST_FILE = SMA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Impactit.SMA;
@@ -764,6 +774,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 63UXYZ8XVE;
 				INFOPLIST_FILE = SMA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.Impactit.SMA;

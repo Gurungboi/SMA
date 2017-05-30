@@ -10,6 +10,8 @@ import UIKit
 
 class FeeDetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblfeename: UILabel!
+    @IBOutlet weak var lblprice: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

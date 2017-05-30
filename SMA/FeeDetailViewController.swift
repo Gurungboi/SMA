@@ -8,28 +8,35 @@
 
 import UIKit
 
-class FeeDetailViewController: UIViewController {
+class FeeDetailViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
+    var Feename = ["Monthly","Lab Fee"]
+    var price = ["Rs.4000","Rs.200"]
+
+    @IBOutlet weak var feeView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return Feename.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellFee = tableView.dequeueReusableCell(withIdentifier: "feeCell", for: indexPath) as! FeeDetailTableViewCell
+        
+        
+        cellFee.lblfeename.text = Feename[indexPath.row]
+        cellFee.lblprice.text = price[indexPath.row]
+        
+        
+        return (cellFee)
+        
     }
-    */
+
 
 }

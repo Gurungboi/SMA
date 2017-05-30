@@ -19,7 +19,7 @@ class TeacherViewController: UIViewController, UICollectionViewDelegate,UICollec
      var teacher = ["nepal1","nepal2","nepal3"]
     var staffname = ["Principal","BOD","Vice Principal"]
     
-     var informationicon = ["nepal1","nepal2","nepal3","nepal4","nepal5"]
+     var informationicon = ["name-Icon-Small","address-Icon-Small","message-Icon-Small","phone2-Icon-Small","subject-Icon-Small"]
     var detailinformation = ["Name","Address","Email","Phone","Subject"]
     //Collection Identifieder
     let  teachercollectionviewIdentifier = "staffCell"

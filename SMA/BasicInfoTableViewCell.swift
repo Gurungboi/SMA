@@ -10,6 +10,20 @@ import UIKit
 
 class BasicInfoTableViewCell: UITableViewCell {
 
+
+    @IBOutlet weak var lblparentname: UILabel!
+    @IBOutlet weak var lblparentnameetails: UILabel!
+    
+    @IBOutlet weak var lblsibiling: UILabel!
+    @IBOutlet weak var lblsibilingdetails: UILabel!
+    
+    @IBOutlet weak var lblpastschool: UILabel!
+    @IBOutlet weak var lblpastschooldetails: UILabel!
+    
+    @IBOutlet weak var lblspecialneed: UILabel!
+    @IBOutlet weak var lblspecialneeddetails: UILabel!
+    
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
