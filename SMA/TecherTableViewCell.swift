@@ -10,8 +10,15 @@ import UIKit
 
 class TecherTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var informationicon: UIImageView!
-    @IBOutlet weak var lblinformation: UILabel!
+    //@IBOutlet weak var informationicon: UIImageView!
+    //@IBOutlet weak var lblinformation: UILabel!
+    
+    @IBOutlet weak var lblname: UITextField!
+    @IBOutlet weak var lbladdress: UITextField!
+    @IBOutlet weak var lblemail: UITextField!
+    @IBOutlet weak var lblphone: UITextField!
+    @IBOutlet weak var lblsubject: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -37,6 +37,7 @@
 		2E3D3E291EC1CE6F00F0EFA0 /* TecherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D3E281EC1CE6F00F0EFA0 /* TecherTableViewCell.swift */; };
 		2E3D3E2B1EC1D18000F0EFA0 /* TeacherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D3E2A1EC1D18000F0EFA0 /* TeacherCollectionViewCell.swift */; };
 		2E4DCD911EC99F86003D2B28 /* StudentAttendantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4DCD901EC99F86003D2B28 /* StudentAttendantTableViewCell.swift */; };
+		2EAD85271EDD8988009FF780 /* teacher.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD85261EDD8988009FF780 /* teacher.json */; };
 		2EB21D1A1EC314CC006717DA /* TeacherDashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB21D191EC314CC006717DA /* TeacherDashViewController.swift */; };
 		2EC173361EDD65380009A090 /* notice.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EC173351EDD65370009A090 /* notice.json */; };
 		2EF21EED1ED99731004D5F35 /* student.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EF21EEC1ED99731004D5F35 /* student.json */; };
@@ -101,6 +102,7 @@
 		2E3D3E281EC1CE6F00F0EFA0 /* TecherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TecherTableViewCell.swift; sourceTree = "<group>"; };
 		2E3D3E2A1EC1D18000F0EFA0 /* TeacherCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E4DCD901EC99F86003D2B28 /* StudentAttendantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentAttendantTableViewCell.swift; sourceTree = "<group>"; };
+		2EAD85261EDD8988009FF780 /* teacher.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teacher.json; sourceTree = "<group>"; };
 		2EB21D191EC314CC006717DA /* TeacherDashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherDashViewController.swift; sourceTree = "<group>"; };
 		2EC173351EDD65370009A090 /* notice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notice.json; sourceTree = "<group>"; };
 		2EF21EEC1ED99731004D5F35 /* student.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = student.json; path = SMA/student.json; sourceTree = "<group>"; };
@@ -168,8 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				2E3D3D9D1EC180E700F0EFA0 /* SMA */,
-				2EF21EEC1ED99731004D5F35 /* student.json */,
-				2EC173351EDD65370009A090 /* notice.json */,
 				2E3D3DB21EC180E800F0EFA0 /* SMATests */,
 				2E3D3DBD1EC180E800F0EFA0 /* SMAUITests */,
 				2E3D3D9C1EC180E700F0EFA0 /* Products */,
@@ -202,6 +202,7 @@
 				2E3D3DDA1EC1A64200F0EFA0 /* Information VC */,
 				2E3D3E191EC1AB2A00F0EFA0 /* SMA-Bridging-Header.h */,
 				2E3D3E2C1EC1D66C00F0EFA0 /* Teacher VC */,
+				2EAD85251EDD896E009FF780 /* JSON FILE */,
 				2E3D3E2E1EC1D67E00F0EFA0 /* Menu VC */,
 				2E3D3E2D1EC1D67500F0EFA0 /* Calendar VC */,
 				2EB21D191EC314CC006717DA /* TeacherDashViewController.swift */,
@@ -290,6 +291,17 @@
 				2E3D3E221EC1B38900F0EFA0 /* MenuTableViewCell.swift */,
 			);
 			name = "Menu VC";
+			sourceTree = "<group>";
+		};
+		2EAD85251EDD896E009FF780 /* JSON FILE */ = {
+			isa = PBXGroup;
+			children = (
+				2EF21EEC1ED99731004D5F35 /* student.json */,
+				2EAD85261EDD8988009FF780 /* teacher.json */,
+				2EC173351EDD65370009A090 /* notice.json */,
+			);
+			name = "JSON FILE";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +424,7 @@
 			files = (
 				2E3D3DA91EC180E700F0EFA0 /* LaunchScreen.storyboard in Resources */,
 				2EC173361EDD65380009A090 /* notice.json in Resources */,
+				2EAD85271EDD8988009FF780 /* teacher.json in Resources */,
 				2E3D3DA61EC180E700F0EFA0 /* Assets.xcassets in Resources */,
 				2EF21EED1ED99731004D5F35 /* student.json in Resources */,
 				2E3D3DA41EC180E700F0EFA0 /* Main.storyboard in Resources */,
